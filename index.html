@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <title>Clock</title>
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong>
+        browser. Please <a href="https://browsehappy.com/">upgrade your browser</a>
+        to improve your experience and security.</p>
+      <![endif]-->
+        <div class="background">
+          <div class="container-fluid">
+            <div class="clock-border">
+              <div id="pointer" class="clock-pointer"></div>
+              <div class="clock-pin"></div>
+            </div>
+            <nav id="menu" class="fixed-bottom mx-auto">
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                  <div class="input-group input-group-sm mb-3">
+                    <input class="form-control input-sm" type="text" name="time"
+                      id="time">
+                    &nbsp;<button class="btn btn-dark btn-sm" id="start"
+                      onclick="start()">START</button>
+                    &nbsp;<button class="btn btn-dark btn-sm" id="reset"
+                      onclick="reset()">RESET</button>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-12">
+            <h1>Timer</h1>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script src="js/index.js"></script>
+
+
+
+
+    </body>
+
+  </html>

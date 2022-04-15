@@ -1,0 +1,93 @@
+html,
+body{
+  height:100%;
+  width:100%;
+  background-color:darkgray;
+}
+.clock-pin{
+  position:absolute;
+  border-radius:100%;
+  background-color:white;
+  width:10%;
+  height:10%;
+  top:50%;
+  left:50%;
+  transform-origin:center center;
+  transform: translate(-50%,-50%);
+  box-shadow: 7px 7px rgba(0,0,0,0.5);
+
+}
+.clock-border{
+  position:absolute;
+  left:50%;
+  top:50%;
+  border:10px solid white;
+  height:300px;
+  width:300px;
+  background-color:lightgray;
+  transform: translate(-50%,-50%);
+  border-radius:100%;
+  box-sizing:border-box;
+  box-shadow: 7px 7px rgba(0,0,0,0.5);
+}
+.clock-pointer{
+  position:absolute;
+  border-top:20px solid black;
+  left:48.5%;
+  bottom:50%;
+  width:3%;
+  height:40%;
+  background-color:white;
+  transform:rotate(0deg);
+  transform-origin: center bottom;
+  transform-box: fill-box;
+  box-sizing:border-box; 
+}
+
+.startTiming{
+  animation-name:timepass;
+  /*animation-duration: 10s;
+  animation-timing-function: linear;*/
+}
+@keyframes spinElt {
+  to { transform: rotate(-360deg) translate(-10px, -10px) rotate(360deg); }
+}
+@keyframes timebackground{
+  0%{
+    background-color:#ccc;
+  }
+  70%{
+    background-color:#ccc;
+  }
+  75%{
+    background-color:yellow;
+  }
+  85%{
+    background-color:yellow;
+  }
+  90%{
+    background-color:red;
+  }
+  99%{
+    background-color:red;
+  }
+  100%{
+    background-color:#ccc
+  }
+}
+@keyframes timepass{
+  0%{
+    transform:rotate(0);
+    border-color: black;
+  }
+  89%{
+    border-color: black;
+  }
+  90%{
+    border-color:yellow;
+  }
+  100%{
+    border-color:yellow;
+    transform:rotate(360deg);
+  }
+}
